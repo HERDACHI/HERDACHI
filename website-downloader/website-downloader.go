@@ -1,14 +1,14 @@
+/**********************CODE IN TRIAL PERIOD, NOT FINISHED.!**************************/
 package main
 
 /*
-It has as input a json with the url and the id of the domain table,
-it obtains the bytes of that url and saves them in the feature table.
+ Application that reads a record from SQS DOWNLOAD_QUEUE, and
+ It has as input a json with the url and the id of the domain table,
+ then it obtains the bytes of that URL and saves them in the feature table.
 */
 
 import (
-	"gorm.io/driver/postgres"
-	"gorm.io/gorm"
-
+	"api_website_down/connect_queue"
 	"encoding/json"
 	"fmt"
 	"io/ioutil"
@@ -16,6 +16,9 @@ import (
 	"net/http"
 	"os"
 	"time"
+
+	"gorm.io/driver/postgres"
+	"gorm.io/gorm"
 )
 
 //Structure with the expected json of table domain
@@ -77,13 +80,13 @@ func checkIfEnvVarsPresent() {
 //function to connect via gorm to the DB
 func connectToDatabase() (db *gorm.DB, err error) {
 
-	dbCreds := fmt.Sprintf("host=%s user=%s dbname=%s sslmode=disable password=%s",
+	dbCredentials := fmt.Sprintf("host=%s user=%s dbname=%s sslmode=disable password=%s",
 		os.Getenv("POSTGRES_HOST"),
 		os.Getenv("POSTGRES_USER"),
 		os.Getenv("POSTGRES_DATABASE"),
 		os.Getenv("POSTGRES_PASSWORD"),
 	)
-	db, err = gorm.Open(postgres.Open(dbCreds), &gorm.Config{})
+	db, err = gorm.Open(postgres.Open(dbCredentials), &gorm.Config{})
 	if err != nil {
 		log.Println("Connection Failed to Open $e", err)
 		return db, err
@@ -219,7 +222,7 @@ func main() {
 	fullbytes := createfeature(iddomain, bodybytes, namedomain)
 
 	json := jsontoqueue(iddomain, namedomain, fullbytes)
-
+	fmt.Println(json)
 	startSendMessages(json)
 	// the programming to send the json with the results to the queue is missing
 	/*
