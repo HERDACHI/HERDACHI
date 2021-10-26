@@ -1,4 +1,4 @@
 @echo off
 call .env.bat 
 go build 
-website-downloader
+api_website_down
