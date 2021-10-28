@@ -1,0 +1,2 @@
+set QUEUE_NAME=Rankleads_2
+set SQS_REGION=us-east-2
