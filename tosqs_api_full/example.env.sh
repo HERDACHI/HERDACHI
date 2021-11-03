@@ -1,0 +1,9 @@
+source ../db/.docker.env.sh
+export POSTGRES_HOST="localhost"
+export POSTGRES_PORT=5432
+export POSTGRES_USER="postgres"
+export POSTGRES_PASSWORD=xxxxxxx
+export POSTGRES_DATABASE=xxxxxxx
+export API_TOKEN='api_token'
+export API_PORT=9072
+export FILENAME='domainlist.txt'
