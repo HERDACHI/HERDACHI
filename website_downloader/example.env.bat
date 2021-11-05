@@ -1,0 +1,10 @@
+@echo off
+set POSTGRES_HOST=localhost
+set POSTGRES_PORT=myport
+set POSTGRES_USER=myuser
+set POSTGRES_PASSWORD=mypassw
+set POSTGRES_DATABASE=mydb
+set API_TOKEN='api_token'
+set API_PORT=9072
+set FILEIN=xxxx.json
+set FILEOUT=xxxx.html
