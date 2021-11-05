@@ -1,6 +1,6 @@
 {
-	"domain_id":3,
+	"id":5,
 	"name": "website_contents",
-	"content": "website_contents"
+	"content": "html code"
 }
 

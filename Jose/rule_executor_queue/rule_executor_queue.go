@@ -23,9 +23,9 @@ import (
 
 //structure to get data from the queue
 type Domainqueue struct {
-	Domain_id int    `json:"domain_id"`
-	Name      string `json:"name"`
-	Content   string `json:"content"`
+	Id      int    `json:"id"`
+	Name    string `json:"name"`
+	Content string `json:"content"`
 }
 
 //structure to send data from the queue
@@ -103,7 +103,7 @@ func readjson() Domainqueue {
 	data, err := ioutil.ReadFile(nameFile)
 	if err != nil {
 		log.Println("ioutil.ReadAll error $e", err)
-
+		fmt.Println(data)
 	}
 
 	var domainqueue Domainqueue
@@ -181,20 +181,20 @@ func startSendMessages(queueBody string) {
 
 }
 
+// integrates all the api functions
 func allservice(w http.ResponseWriter, r *http.Request) {
 
 	domainqueue := readjson()
-	iddomain := domainqueue.Domain_id
+	iddomain := domainqueue.Id
 	namedomain := getdomain(iddomain)
 	queueBody := constructmessages(iddomain, namedomain)
 	startSendMessages(queueBody)
 	fmt.Println(queueBody)
-	http.Error(w, queueBody, 400)
+	http.Error(w, queueBody, 500)
 }
 
 func main() {
 	port := os.Getenv("API_PORT")
-	//allservice()
 	http.HandleFunc("/", allservice) //.Methods("GET")
 	log.Println(http.ListenAndServe(":"+port, nil))
 
