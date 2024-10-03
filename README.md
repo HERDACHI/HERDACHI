@@ -10,6 +10,15 @@ I'm **@HERDACHI**. I'm passionate about **cybersecurity**, **cloud computing**, 
 - 🐳 **Containerization**: Skilled in Docker and Kubernetes, I focus on containerizing applications for better deployment and management.
 - 🐧 **Linux**: A strong advocate for open-source, I use Linux for development and server management.
 
+## My Skills
+
+- **Programming Languages**: Java, Node.js, PHP
+- **Frameworks**: Spring Boot, React
+- **Cloud Platforms**: AWS, Google Cloud
+- **Containerization**: Docker, Kubernetes
+- **Databases**: SQL, NoSQL
+- **Queue Systems**: Experience with various queuing systems
+
 ## Current Focus
 
 I'm currently enhancing my skills in:
@@ -24,6 +33,4 @@ I'm currently enhancing my skills in:
 I'm always open to new opportunities and collaborations. Feel free to reach out to me via:
 
 - 📧 **Email**: herdachi@outlook.com
-- 
-
 
