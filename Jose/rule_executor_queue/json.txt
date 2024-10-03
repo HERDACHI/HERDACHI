@@ -1,6 +1,0 @@
-{
-	"domain_id":3,
-	"name": "website_contents",
-	"content": "website_contents"
-}
-

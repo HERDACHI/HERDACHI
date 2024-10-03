@@ -1,6 +1,0 @@
-{
-	"id": 1,
-	"description": "get 10 first records",
-	"query": "SELECT * FROM public.domain ORDER BY last_crawl_date ASC LIMIT 10;",
-	"countRows":10
-}
