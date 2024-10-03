@@ -1,2 +1,0 @@
-set QUEUE_NAME=Rankleads
-set SQS_REGION=us-east-2

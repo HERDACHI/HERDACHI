@@ -1,9 +1,0 @@
-@echo off
-set POSTGRES_HOST=localhost
-set POSTGRES_PORT=5432
-set POSTGRES_USER=postgres
-set POSTGRES_PASSWORD=xxxxxxx
-set POSTGRES_DATABASE=xxxxxxx
-set API_TOKEN='api_token'
-set API_PORT=9072
-set FILENAME='domainlist.txt'
