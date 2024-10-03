@@ -24,8 +24,6 @@ I'm currently enhancing my skills in:
 I'm always open to new opportunities and collaborations. Feel free to reach out to me via:
 
 - 📧 **Email**: herdachi@outlook.com
-- 💼 **LinkedIn**: Your LinkedIn Profile
-
-Looking forward to connecting and collaborating with you!
+- 
 
 
