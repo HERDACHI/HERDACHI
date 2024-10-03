@@ -1,0 +1,43 @@
+{
+    "productos": [
+      {
+        "nombre": "Producto 1",
+        "precio": 10.00,
+        "nota": "Nota para el producto 1"
+      },
+      {
+        "nombre": "Producto 2",
+        "precio": 15.00,
+        "nota": "Nota para el producto 2"
+      },
+      {
+        "nombre": "Producto 3",
+        "precio": 20.00,
+        "nota": "Nota para el producto 3"
+      },
+      {
+        "nombre": "Producto 4",
+        "precio": 270.00,
+        "nota": "Nota para el producto 4"
+      }
+    ],
+    "mesoneros": [
+      {
+        "nombre": "Jose",
+        "cedula": "V-13.234.122"
+      },
+      {
+        "nombre": "Pedro",
+        "cedula": "V-12.234.123"
+      },
+      {
+        "nombre": "Mario",
+        "cedula": "V-19.234.126"
+      },
+      {
+        "nombre": "Daniela",
+        "cedula": "V-17.234.129"
+      }
+    ]
+  }
+  

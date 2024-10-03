@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Restaurante</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Access-Control-Allow-Origin" content="*">
+	<link rel="stylesheet" href="restorant.css">
+</head>
+<body>
+	<div class="window">
+		<h2>Tomar Pedido</h2>
+		<label for="mesoneros">Mesonero:</label>
+		<select id="mesoneros"></select>
+		<label for="mesas">Mesas:</label>
+		<select id="mesas"></select>
+
+        <label for="producto">Productos:</label>
+	    <select id="producto"></select>
+		<div><button id="agregar" onclick="agregarFila()">Agregar</button></div>
+        
+
+		<table id="tabla">
+			<thead>
+				<tr>
+					<th>Nombre</th>
+					<th>Cantidad</th>
+					<th>Precio</th>
+					<th>Nota</th>
+					<th>Subtotal</th>
+					<th>Acción</th>
+				</tr>
+			</thead>
+			<tbody>
+			</tbody>
+		</table>
+		<div>
+			TOTAL= <input type="text" id="resultado">
+		</div>
+		<div class="procesar">
+			<button id="btnprocesar" onclick="procesarPedido()">Procesar</button>
+		</div>
+	</div>
+	
+
+	<script src="script.js"></script>
+</body>
+</html>
